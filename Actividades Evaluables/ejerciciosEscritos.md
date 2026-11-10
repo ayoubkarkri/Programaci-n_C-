@@ -28,3 +28,20 @@ Salida del código: <br>
 ---
 
 ## 3.1.12
+## 3.1.12
+
+**¿Qué hace el código?**
+Imprime un patrón de 10 filas y 10 columnas formado por símbolos `<` y `>`, alternando filas completas[cite: 1].
+
+**¿Cómo funciona?**
+- El bucle exterior (`row` de 10 a 1) controla las filas[cite: 1].
+- El bucle interior (`column` de 1 a 10) imprime 10 caracteres en cada fila[cite: 1].
+- Usa de nuevo el operador ternario para comprobar la fila: si el número de la fila es impar (`row % 2 == 1`), toda la fila se llena con `<`, y si es par, se llena con `>`[cite: 1].
+- Al terminar cada fila, hace un salto de línea (`\n`) y resta 1 a `row` (`--row`)[cite: 1].
+
+**Aclaraciones:** `row % 2 == 1 ? "<" : ">"`
+- **Condición:** ¿Es el número de fila impar?
+- **?** Si sí, imprime el carácter `<`[cite: 1].
+- **:** Si no, imprime el carácter `>`[cite: 1].
+
+Salida del código: <br>
